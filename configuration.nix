@@ -95,10 +95,14 @@
     tailscale.enable = true;
     hypridle.enable = true;
     pipewire.pulse.enable = true;
-    displayManager.sddm.enable = true;
+
     upower.enable = true;
     blueman.enable = true;
     tlp.enable = true;
+    displayManager.sddm = {
+      enable = true;
+      wayland.enable = true;
+    };
     xserver.xkb = {
       layout = "br";
       variant = "thinkpad";

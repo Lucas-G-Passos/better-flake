@@ -80,6 +80,8 @@
     libreoffice-qt6-fresh
     font-manager
     quickshell
+    brightnessctl
+    hyprls
   ];
 
   fonts.packages = with pkgs; [

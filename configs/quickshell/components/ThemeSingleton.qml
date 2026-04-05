@@ -21,5 +21,5 @@ Singleton {
 
     property string scriptsDir: Qt.resolvedUrl("scripts/").toString().slice(7)
 
-    property string iosevkaFont: "Iosevka Nerd Font"
+    property string font: "JetBrainsMono Nerd Font Propo"
 }

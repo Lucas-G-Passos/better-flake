@@ -20,7 +20,7 @@ Item {
         Text {
             anchors.centerIn: parent
             text: root.time
-            font.family: ThemeSingleton.iosevkaFont
+            font.family: ThemeSingleton.font
             color: ThemeSingleton.text
         }
     }

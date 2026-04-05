@@ -11,6 +11,9 @@
     kitty
     font-manager
     papirus-icon-theme
+    rofi
+    kdePackages.qtdeclarative
+    home-manager
   ];
 
   programs.kitty = {

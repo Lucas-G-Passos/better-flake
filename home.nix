@@ -1,5 +1,6 @@
 {
   config,
+  pkgs,
   ...
 }:
 {
@@ -9,6 +10,11 @@
   home.file = {
     ".config/quickshell".source =
       config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/configs/quickshell";
+    ".config/hypr".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos/configs/hyprland";
+  };
+  home.sessionVariables = {
+    QMLLS_BUILD_DIRS = "${pkgs.kdePackages.qtdeclarative}/lib/qt-6/qml/:${pkgs.quickshell}/lib/qt-6/qml/";
   };
 
   programs.git = {
@@ -25,5 +31,8 @@
   imports = [
     ./configs/packages.nix
     ./configs/shell.nix
+    ./configs/themes.nix
   ];
+
+  nixpkgs.config.allowUnfree = true;
 }

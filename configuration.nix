@@ -72,16 +72,14 @@
     tree
     git
     file
-    kdePackages.dolphin
-    mindustry-wayland
-    vlc
-    kdePackages.ark
     nix-search-cli
     libreoffice-qt6-fresh
     font-manager
     quickshell
     brightnessctl
-    hyprls
+    networkmanagerapplet
+    unzip
+    python3
   ];
 
   fonts.packages = with pkgs; [
@@ -97,6 +95,7 @@
     tailscale.enable = true;
     hypridle.enable = true;
     pipewire.pulse.enable = true;
+    gvfs.enable = true;
 
     upower.enable = true;
     blueman.enable = true;

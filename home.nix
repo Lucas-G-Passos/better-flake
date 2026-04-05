@@ -15,6 +15,8 @@
   };
   home.sessionVariables = {
     QMLLS_BUILD_DIRS = "${pkgs.kdePackages.qtdeclarative}/lib/qt-6/qml/:${pkgs.quickshell}/lib/qt-6/qml/";
+    QT_QPA_PLATFORMTHEME = "qt6ct";
+    EDITOR = "micro";
   };
 
   programs.git = {

@@ -22,7 +22,7 @@ Item {
     }
 
     function getIcon(volume) {
-        var v = mapVolume(volume);
+        var v = volume;
         if (v === 0)
             return "muted";
         else if (v <= 33)
@@ -45,4 +45,6 @@ Item {
             source: `image://icon/audio-volume-${root.icon}`
         }
     }
+
+    MouseArea{}
 }

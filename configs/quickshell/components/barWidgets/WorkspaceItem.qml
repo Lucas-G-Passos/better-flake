@@ -101,7 +101,7 @@ Item {
                                     anchors.centerIn: parent
                                     text: topLevelDelegate.count
                                     color: ThemeSingleton.base
-                                    font.family: ThemeSingleton.iosevkaFont
+                                    font.family: ThemeSingleton.font
                                     font.pixelSize: 8
                                     font.weight: 600
                                 }
@@ -114,7 +114,7 @@ Item {
                             Layout.rightMargin: topLevelDelegate.active ? 8 : 0
                             text: topLevelDelegate.active ? topLevelDelegate.appname.slice(0, 50) : ""
                             color: ThemeSingleton.text
-                            font.family: ThemeSingleton.iosevkaFont
+                            font.family: ThemeSingleton.font
                             clip: true
                             opacity: topLevelDelegate.active ? 1 : 0
 

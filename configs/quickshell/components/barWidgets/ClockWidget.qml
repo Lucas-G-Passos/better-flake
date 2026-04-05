@@ -14,7 +14,7 @@ Item {
     }
 
     Rectangle {
-        implicitWidth: 60
+        implicitWidth: childrenRect.width+5
         implicitHeight: bar.implicitHeight
         color: 'blue'
         Text {

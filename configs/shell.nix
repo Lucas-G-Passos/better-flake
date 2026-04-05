@@ -19,20 +19,20 @@
     generateCompletions = true;
   };
 
-  programs.zoxide = {
-    enable = true;
-    enableFishIntegration = true;
-  };
-
-  programs.starship = {
-    enable = true;
-    enableFishIntegration = true;
-    enableInteractive = false;
-    enableTransience = false;
-  };
-
-  programs.carapace = {
-    enable = true;
-    enableFishIntegration = true;
+  programs = {
+    carapace = {
+      enable = true;
+      enableFishIntegration = true;
+    };
+    starship = {
+      enable = true;
+      enableFishIntegration = true;
+      enableInteractive = false;
+      enableTransience = false;
+    };
+    zoxide = {
+      enable = true;
+      enableFishIntegration = true;
+    };
   };
 }
